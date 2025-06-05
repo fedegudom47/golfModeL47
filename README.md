@@ -34,8 +34,8 @@ This repository supports my Kenneth Cooke Summer Research Fellowship and will ev
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/golf-strategy-optimization.git
-cd golf-strategy-optimization
+git clone https://github.com/fedegudom47/golfModeL47.git
+cd golfModeL47
 ```
 
 Install required packages:
