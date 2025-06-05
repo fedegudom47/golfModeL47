@@ -53,23 +53,32 @@ Y = R * np.sin(T)
 def lookup_lie(x, y):
     point = Point(x + pin.x, y + pin.y)
 
-    # Map any extra labels to Broadie-compatible ones
-    lie_aliases = {
-        "bunker": "sand",
+    # Convert "bunker" to "sand", ignore "water_hazard", "OB", etc.
+    lie_map = {
         "green": "green",
         "fairway": "fairway",
         "rough": "rough",
+        "bunker": "sand",
         "tee": "tee"
     }
 
-    for raw_lie, broadie_lie in lie_aliases.items():
-        match = hole_df[hole_df["lie"] == raw_lie]
-        if any(g.contains(point) for g in match["geometry"]):
-            return broadie_lie
+    for raw_lie, mapped_lie in lie_map.items():
+        matches = hole_df[hole_df["lie"] == raw_lie]
+        if any(geom.contains(point) for geom in matches["geometry"]):
+            return mapped_lie
     return None
 
 
+
 def get_strokes(r, lie):
+    if lie:
+        val = get_strokes(r, lie)
+    if np.isnan(val):
+        print(f"⚠ NaN stroke value at r={r:.1f}, lie={lie}")
+        Z[i, j] = val
+    else:
+        print(f"⛔ No lie found at x={x:.1f}, y={y:.1f}")
+
     if lie not in yard_interp:
         return np.nan
     series = yard_interp[lie].interpolate(method="linear", limit_direction="both")
