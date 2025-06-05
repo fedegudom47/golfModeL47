@@ -27,7 +27,7 @@ This repository supports my Kenneth Cooke Summer Research Fellowship and will ev
 
 - Integrate reinforcement learning to simulate full-hole and full-round strategies
 - Expand terrain realism with slope, lie type, and weather considerations
-- Create a user-facing app where players can upload data and receive personalised club/aimpoint guidance - a “**data caddie**”
+- Create a user facing app where players can upload data and receive personalised club/aimpoint guidance - a “**data caddie**”
 
 ## 🛠️ Setup
 
