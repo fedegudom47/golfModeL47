@@ -44,17 +44,6 @@ Install required packages:
 pip install -r requirements.txt
 ```
 
-## 📂 Structure
-
-```
-├── data/               # Raw and processed data
-├── notebooks/          # Exploratory notebooks and analysis
-├── src/                # Source code for modelling and visualisation
-├── figures/            # Generated plots and visual output
-├── README.md           # Project overview and setup
-└── requirements.txt    # Python dependencies
-```
-
 ## 📬 Contact
 
 Developed by Federica Domecq with the advising of Professor Gabriel Chandler and Johanna Hardin from Pomona College. Made possible my Kenneth Cooke Summer Fellowship.
