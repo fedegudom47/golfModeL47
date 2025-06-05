@@ -27,7 +27,7 @@ This repository supports my Kenneth Cooke Summer Research Fellowship and will ev
 
 - Integrate reinforcement learning to simulate full-hole and full-round strategies
 - Expand terrain realism with slope, lie type, and weather considerations
-- Create a user-facing app where players can upload data and receive personalised club/aimpoint guidance – a “**data caddie**”
+- Create a user-facing app where players can upload data and receive personalised club/aimpoint guidance - a “**data caddie**”
 
 ## 🛠️ Setup
 
@@ -57,4 +57,4 @@ pip install -r requirements.txt
 
 ## 📬 Contact
 
-Developed by Federica Domecq. For questions or collaboration inquiries, please reach out via GitHub or academic email.
+Developed by Federica Domecq with the advising of Professor Gabriel Chandler and Johanna Hardin from Pomona College. Made possible my Kenneth Cooke Summer Fellowship.
